@@ -1,3 +1,5 @@
+# Original file from https://github.com/RhinoSecurityLabs/Security-Research/blob/master/tools/aws-pentest-tools/aws_escalate.py . Improved upon with new methods and ported to BlackArch Linux
+
 #!/usr/bin/env python3
 from __future__ import print_function
 import boto3, argparse, os, sys, json, time
