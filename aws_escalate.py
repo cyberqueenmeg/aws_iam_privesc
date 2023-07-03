@@ -308,16 +308,16 @@ def main(args):
             'codestar:CreateProjectFromTemplate': True
         },
         'PassRoleToNewCodestarProject': {
-            'codestar:CreateProject': True
+            'codestar:CreateProject': True,
             'iam:PassRole': True
         },
         'AssociateTeammemberToCodestarProject': {
-            'codestar:CreateProject': True
+            'codestar:CreateProject': True,
             'codestar:AssociateTeamMember': True
         },
         'PassRoleToNewSagemakerBook': {
-            'iam:PassRole': True
-            'sagemaker:CreateNotebookInstance': True
+            'iam:PassRole': True,
+            'sagemaker:CreateNotebookInstance': True,
             'sagemaker:CreatePresignedNotebookInstanceUrl': True
         },
         'AccessExistingSagemakerBook': {
