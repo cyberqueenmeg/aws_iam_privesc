@@ -219,6 +219,7 @@ def main(args):
         'codestar:CreateProjectFromTemplate',
         'codestar:CreateProject',
         'codestar:AssociateTeamMember',
+        'codestar:AssociateTeamMember'
     ]
 
     escalation_methods = {
@@ -315,9 +316,9 @@ def main(args):
             'codestar:AssociateTeamMember': True
         },
         'PassRoleToNewSagemakerBook': {
+            'iam:PassRole': True
             'sagemaker:CreateNotebookInstance': True
             'sagemaker:CreatePresignedNotebookInstanceUrl': True
-            'iam:PassRole': True
         },
         'AccessExistingSagemakerBook': {
             'sagemaker:CreatePresignedNotebookInstanceUrl': True
