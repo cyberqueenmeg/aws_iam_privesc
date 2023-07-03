@@ -210,7 +210,15 @@ def main(args):
         'glue:CreateDevEndpoint',
         'glue:UpdateDevEndpoint',
         'cloudformation:CreateStack',
-        'datapipeline:CreatePipeline'
+        'datapipeline:CreatePipeline',
+        'lambda:UpdateFunctionConfiguration',
+        'sagemaker:CreateNotebookInstance',
+        'sagemaker:CreatePresignedNotebookInstanceUrl',
+        'sagemaker:ListNotebookInstances',
+        'datapipeline:PutPipelineDefinition',
+        'codestar:CreateProjectFromTemplate',
+        'codestar:CreateProject',
+        'codestar:AssociateTeamMember',
     ]
 
     escalation_methods = {
@@ -294,6 +302,25 @@ def main(args):
         },
         'EditExistingLambdaFunctionWithRole': {
             'lambda:UpdateFunctionCode': True
+        },
+        'CreateCodestarProjectFromTemplate': {
+            'codestar:CreateProjectFromTemplate': True
+        },
+        'PassRoleToNewCodestarProject': {
+            'codestar:CreateProject': True
+            'iam:PassRole': True
+        },
+        'AssociateTeammemberToCodestarProject': {
+            'codestar:CreateProject': True
+            'codestar:AssociateTeamMember': True
+        },
+        'PassRoleToNewSagemakerBook': {
+            'sagemaker:CreateNotebookInstance': True
+            'sagemaker:CreatePresignedNotebookInstanceUrl': True
+            'iam:PassRole': True
+        },
+        'AccessExistingSagemakerBook': {
+            'sagemaker:CreatePresignedNotebookInstanceUrl': True
         }
     }
     import re
