@@ -1,1 +1,5 @@
-# aws_iam_privesc
+# AWS IAM Privilege Escalation Tool
+This tool is largely based on the work of RhinoSecurity Labs and [their deprecated script](https://github.com/RhinoSecurityLabs/Security-Research/blob/master/tools/aws-pentest-tools/aws_escalate.py) for testing IAM PrivEsc. I've updated the script with new methods and ported it to BlackArch Linux.
+
+## DISCLAIMER
+The information presented in this GitHub repository can be used for both beneficial and malicious purposes. I, Megan G. Howell, do not condone or endorse the use of this information for malicious purposes and will fully support the prosecution of those who use the information presented above in a manner that violates the law. You are only authorized to utilize this information on your own systems or on systems you are explicitly authorized to penetration test or perform bug bounties on. If you use this exploit in a malicious manner, you will be charged and prosecuted to the full extent of the laws surrounding unethical hacking and cyber crime and I will fully support any punishment brought down on you from the court of law.
