@@ -219,7 +219,8 @@ def main(args):
         'codestar:CreateProjectFromTemplate',
         'codestar:CreateProject',
         'codestar:AssociateTeamMember',
-        'codestar:AssociateTeamMember'
+        'codestar:AssociateTeamMember',
+        'sts:GetFederationToken'
     ]
 
     escalation_methods = {
@@ -322,6 +323,9 @@ def main(args):
         },
         'AccessExistingSagemakerBook': {
             'sagemaker:CreatePresignedNotebookInstanceUrl': True
+        },
+        'GetFederationTokenID': {
+            'sts:GetFederationToken': True
         }
     }
     import re
