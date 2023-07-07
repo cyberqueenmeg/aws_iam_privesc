@@ -1,5 +1,0 @@
-repos:
-  - repo: https://github/com/cyberqueenmeg/aws_iam_privesc
-    rev: ""
-    hooks:
-      - id: badgie
